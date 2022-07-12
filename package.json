@@ -1,0 +1,50 @@
+{
+  "name": "lannisterpay",
+  "version": "1.0.0",
+  "description": "a NodeJS API service that implements the transaction payment splitting service (TPSS) requirements shared by LannisterPay",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --verbose",
+    "dev": "nodemon --exec babel-node src/server.js",
+    "start": "node dist/server.js",
+    "build": "babel ./src -d dist --copy-files",
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/femoscopy/lannisterpay.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "flutterwave",
+    "lannisterpay",
+    "tpss"
+  ],
+  "author": "Femi Ogunyemi <ogunyemifemioladimeji@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.17.2",
+    "celebrate": "^15.0.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "joi": "^17.6.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@types/node": "^18.0.3",
+    "babel-jest": "^27.5.1",
+    "debug": "^4.3.4",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}
